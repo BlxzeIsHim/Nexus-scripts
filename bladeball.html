@@ -1,115 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blade Ball</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #1a1a1a; /* Dark background color */
-            color: #fff;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark grey background color */
+    color: #fff;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-        h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
+h1 {
+    font-size: 36px;
+}
 
-        p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
+p {
+    font-size: 18px;
+}
 
-        .game-thumbnail {
-            text-align: center;
-            margin-bottom: 40px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow effect */
-        }
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
-        .game-thumbnail img {
-            width: 100%; /* Ensure the image fills its container */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 10px;
-        }
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
 
-        .loader {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
 
-        .loader p {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+button:hover {
+    background-color: #8b0000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow effect on hover */
+}
 
-        .loader button {
-            padding: 15px 40px;
-            font-size: 24px;
-            background-color: #ff4444;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow effect */
-            transition: box-shadow 0.3s ease; /* Add smooth transition for shadow */
-        }
-
-        .loader button:hover {
-            background-color: #cc0000;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Increase shadow effect on hover */
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Blade Ball</h1>
-            <p>Here's the script for the game you want to play:</p>
-        </header>
-        <main>
-            <div class="game-thumbnail">
-                <img src="Robox-Blade-Ball-Header.webp" alt="Blade Ball Thumbnail">
-            </div>
-            <div class="loader">
-                <p>Loading...</p>
-                <p id="loaderScript">loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()</p>
-                <button onclick="copyScript()">Copy Script</button>
-            </div>
-        </main>
-    </div>
-    <script>
-        function copyScript() {
-            var scriptText = document.getElementById("loaderScript").innerText;
-
-            // Create a textarea element to hold the script text
-            var textarea = document.createElement("textarea");
-            textarea.value = scriptText;
-            document.body.appendChild(textarea);
-
-            // Select the textarea content and copy it to the clipboard
-            textarea.select();
-            document.execCommand("copy");
-
-            // Remove the textarea from the document
-            document.body.removeChild(textarea);
-
-            // Change the button text to indicate the script is copied
-            var copyButton = document.querySelector(".loader button");
-            copyButton.textContent = "Copied!";
-        }
-    </script>
-</body>
-</html>
+footer {
+    text-align: center;
+    margin-top: 40px; /* Add margin to create space between footer and search container */
+}
