@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #ff0000, #0000ff);
+    background-size: cover; /* Ensures the gradient covers the entire background */
+    background-attachment: fixed; /* Fixes the background so it doesn't scroll */
     color: #fff;
 }
 
