@@ -14,8 +14,6 @@ function search() {
         window.location.href = "bladeball.html";
     } else if (searchTerm === "counter blox") {
         window.location.href = "counterblox.html";
-    } else if (searchTerm === "doors") {
-        window.location.href = "doors.html";
     } else {
         // Implement other search functionality or display a message for no results found
         alert("No results found for: " + searchTerm);
