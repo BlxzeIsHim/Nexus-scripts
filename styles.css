@@ -2,7 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #ff0000, #0000ff);
-    background-size: cover; /* Ensure the gradient covers the entire background */
+    background-size: 100% 100%; /* Ensure the gradient covers the entire background */
+    background-repeat: no-repeat; /* Prevent background from repeating */
     color: #fff;
 }
 
