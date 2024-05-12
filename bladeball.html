@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade Ball</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #222; /* Dark background color */
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .game-thumbnail {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .loader {
+            text-align: center;
+        }
+
+        .loader p {
+            margin-bottom: 10px;
+        }
+
+        .loader button {
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .loader button:hover {
+            background-color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blade Ball</h1>
+            <p>Here's the script for the game you want to play:</p>
+        </header>
+        <main>
+            <div class="game-thumbnail">
+                <img src="https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Robox-Blade-Ball-Header.webp" alt="Blade Ball Thumbnail">
+            </div>
+            <div class="loader">
+                <p>Loading...</p>
+                <p id="loaderScript">loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()</p>
+                <button onclick="copyScript()">Copy</button>
+            </div>
+        </main>
+    </div>
+    <script>
+        function copyScript() {
+            var scriptText = document.getElementById("loaderScript").innerText;
+
+            // Create a textarea element to hold the script text
+            var textarea = document.createElement("textarea");
+            textarea.value = scriptText;
+            document.body.appendChild(textarea);
+
+            // Select the textarea content and copy it to the clipboard
+            textarea.select();
+            document.execCommand("copy");
+
+            // Remove the textarea from the document
+            document.body.removeChild(textarea);
+
+            // Change the button text to indicate the script is copied
+            var copyButton = document.querySelector(".loader button");
+            copyButton.textContent = "Copied!";
+        }
+    </script>
+</body>
+</html>
