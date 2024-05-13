@@ -8,6 +8,8 @@ function search() {
         window.location.href = "doors.html";
     } else if (searchTerm === "blox fruits") {
         window.location.href = "bloxfruits.html";
+    } else if (searchTerm === "adopt me") {
+        window.location.href = "adoptme.html";
     } else {
         // Redirect to the scriptnotfound.html for unknown games
         window.location.href = "scriptnotfound.html";
