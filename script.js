@@ -12,8 +12,10 @@ function search() {
         window.location.href = "adoptme.html";
     } else if (searchTerm === "jail break") {
         window.location.href = "jailbreak.html";
-    } else if (searchTerm === "type://soul" || searchTerm === "type soul" || searchTerm === "TYPE://SOUL") {
+    } else if (searchTerm === "type://soul" || searchTerm === "type soul" || searchTerm === "type://soul") {
         window.location.href = "typesoul.html";
+    } else if (searchTerm === "murder mystery 2" || searchTerm === "murder mystery") {
+        window.location.href = "murdermystery2.html";
     } else {
         // Redirect to the scriptnotfound.html for unknown games
         window.location.href = "scriptnotfound.html";
