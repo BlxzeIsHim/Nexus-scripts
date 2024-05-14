@@ -10,8 +10,10 @@ function search() {
         window.location.href = "bloxfruits.html";
     } else if (searchTerm === "adopt me") {
         window.location.href = "adoptme.html";
-     } else if (searchTerm === "jail break") {
+    } else if (searchTerm === "jail break") {
         window.location.href = "jailbreak.html";
+    } else if (searchTerm === "type://soul" || searchTerm === "type soul" || searchTerm === "TYPE://SOUL") {
+        window.location.href = "typesoul.html";
     } else {
         // Redirect to the scriptnotfound.html for unknown games
         window.location.href = "scriptnotfound.html";
