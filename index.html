@@ -15,7 +15,6 @@
         <main>
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Search...">
-                <button onclick="playMusic()">Play Music</button> <!-- Added button to trigger audio playback -->
                 <button onclick="search()">Search</button>
                 <button onclick="window.location.href = 'solara-executor.html';">Solara Executor</button> <!-- Button to lead to solara-executor.html -->
             </div>
@@ -25,17 +24,6 @@
             <button onclick="window.location.href = 'termsofuse.html';">Terms of Use</button>
         </footer>
     </div>
-    <!-- Removed autoplay attribute from audio element -->
-    <audio id="backgroundMusic" loop>
-        <source src="y2mate.com - Its Playtime.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
     <script src="script.js"></script>
-    <script>
-        function playMusic() {
-            var audio = document.getElementById("backgroundMusic");
-            audio.play();
-        }
-    </script>
 </body>
 </html>
