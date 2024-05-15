@@ -74,6 +74,6 @@ footer {
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 30px; /* Adjust the size to ensure both icons are the same */
+    height: 30px; /* Adjust the size to ensure both icons are the same */
 }
