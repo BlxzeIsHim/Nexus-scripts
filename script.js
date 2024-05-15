@@ -21,3 +21,9 @@ function search() {
         window.location.href = "scriptnotfound.html";
     }
 }
+
+document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        search();
+    }
+});
