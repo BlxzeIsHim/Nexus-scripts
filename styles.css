@@ -63,12 +63,17 @@ footer {
     padding: 20px 0; /* Add some padding for space */
 }
 
-.social-icons {
-    margin-top: 10px; /* Add margin to the top for spacing */
+.footer-buttons {
+    margin-bottom: 10px;
 }
 
-.social-icon {
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons img {
     width: 30px;
     height: 30px;
-    margin-left: 10px;
 }
