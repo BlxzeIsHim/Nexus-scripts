@@ -63,6 +63,10 @@ footer {
     padding: 20px 0; /* Add some padding for space */
 }
 
+.social-icons {
+    margin-top: 10px; /* Add margin to the top for spacing */
+}
+
 .social-icon {
     width: 30px;
     height: 30px;
