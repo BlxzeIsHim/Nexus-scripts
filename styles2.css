@@ -1,40 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
-  background: url('wp5761841-in-the-fog-wallpapers.jpg') no-repeat center center fixed; 
-  background-size: cover;
   font-family: 'Roboto', Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+  position: relative; /* Needed for pseudo-element positioning */
 }
 
 body::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: inherit;
+  background: url('wp5761841-in-the-fog-wallpapers.jpg') no-repeat center center fixed;
   background-size: cover;
-  filter: blur(8px);
-  z-index: -1;
+  filter: blur(8px); /* Adjust the blur effect */
+  z-index: -1; /* Ensure the background is behind everything else */
 }
 
 .container {
   width: 100%;
   max-width: 400px;
   padding: 30px;
-  background-color: #ffffff; /* White background for the form */
+  background-color: rgba(255, 255, 255, 0.9); /* White background for the form with transparency */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   box-sizing: border-box;
-  position: relative;
-  z-index: 1;
+  position: relative; /* Ensure it's above the background pseudo-element */
 }
 
 h2 {
