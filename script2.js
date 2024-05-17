@@ -1,4 +1,4 @@
-`JavaScript`: document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById('loginForm').addEventListener('submit', function(event) {
   event.preventDefault();
   var username = document.getElementById('username').value.trim();
   var password = document.getElementById('password').value.trim();
@@ -14,7 +14,7 @@
   // Save data in local storage
   localStorage.setItem('Password ' + username, saltedPassword);
 
-  // Redirect to index2.html
+  // Redirect to homepage.html
   window.location.href = 'homepage.html';
 });
 
