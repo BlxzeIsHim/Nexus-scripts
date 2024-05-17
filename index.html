@@ -10,15 +10,19 @@
   <div class="container">
     <h2>Login</h2>
     <form id="loginForm">
-      <label for="username" class="animated-label">Username...</label>
-      <input type="text" id="username" required>
-      <label for="password" class="animated-label">Password...</label>
-      <input type="password" id="password" required>
+      <div class="input-container">
+        <input type="text" id="username" required>
+        <label for="username" class="animated-label">Username...</label>
+      </div>
+      <div class="input-container">
+        <input type="password" id="password" required>
+        <label for="password" class="animated-label">Password...</label>
+      </div>
       <button type="submit" id="signupBtn">Sign Up</button>
     </form>
     <p id="errorMessage" class="hidden">You have to fill out the labels before pressing Sign Up!</p>
   </div>
 
-  <script src="script.js2"></script>
+  <script src="script2.js"></script>
 </body>
 </html>
