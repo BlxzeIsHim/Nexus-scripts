@@ -1,4 +1,4 @@
-`Styles2.css`: body {
+body {
   background-color: #f0f0f0; /* Grey background */
   font-family: Arial, sans-serif;
 }
@@ -13,19 +13,36 @@
   text-align: center;
 }
 
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 label {
-  display: block;
-  margin-bottom: 5px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  pointer-events: none;
   font-size: 14px;
   color: #888;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 10px 10px 10px 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus + .animated-label,
+input:not(:placeholder-shown) + .animated-label {
+  top: -5px;
+  left: 15px;
+  font-size: 12px;
+  opacity: 1;
 }
 
 button {
@@ -45,22 +62,6 @@ button:hover {
 
 .hidden {
   display: none;
-}
-
-.animated-label {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  transition: all 0.3s ease;
-  opacity: 0.5;
-}
-
-input:focus + .animated-label,
-input:not(:placeholder-shown) + .animated-label {
-  top: 5px;
-  left: 10px;
-  font-size: 12px;
-  opacity: 1;
 }
 
 #errorMessage {
