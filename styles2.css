@@ -1,16 +1,28 @@
 body {
-  background-color: #f0f0f0; /* Grey background */
+  background-color: #f0f0f0; /* Light grey background */
   font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  width: 300px;
-  margin: 100px auto;
+  width: 100%;
+  max-width: 400px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff; /* White background for the form */
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
 }
 
 .input-container {
@@ -20,7 +32,7 @@ body {
 
 label {
   position: absolute;
-  left: 20px;
+  left: 15px;
   top: 15px;
   transition: all 0.3s ease;
   opacity: 0.5;
@@ -31,29 +43,33 @@ label {
 
 input {
   width: 100%;
-  padding: 10px 10px 10px 20px;
+  padding: 15px 15px 15px 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 input:focus + .animated-label,
 input:not(:placeholder-shown) + .animated-label {
-  top: -5px;
+  top: -10px;
   left: 15px;
   font-size: 12px;
   opacity: 1;
+  background-color: #ffffff;
+  padding: 0 5px;
 }
 
 button {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
 button:hover {
@@ -67,4 +83,5 @@ button:hover {
 #errorMessage {
   color: red;
   font-size: 14px;
+  margin-top: 10px;
 }
